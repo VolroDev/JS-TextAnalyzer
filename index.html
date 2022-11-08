@@ -2,14 +2,73 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Today's Date</title>
+
+    <title>Random Title</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Приклад коментарю-->
 </head>
 
 <body>
+
+    <script src="js/date.js"></script>
+
+    <script>
+        function sendForm() {
+
+            const keyBox = document.getElementById("InputText").value;
+
+            if (keyBox.length > 0) {
+
+                const array = keyBox.split('');
+                const numbers = "1234567890";
+                const characters = "йцукенгшщзхїфівапролджєячсмитьбю";
+                const specialCharacters = "~`!@#$%^&*()-_=+[{]};:',<.>/?" + '"\|';
+                let wordsCount = 0;
+
+                for (let index = 0; index < array.length; index++) {
+                    const element = array[index];
+
+                    if (index = 0)//Перший єлемент
+                    {
+
+                    }
+                    else if (index = array.length) //Останній єлемент
+                    {
+
+                    }
+                    else //Усі інші єлементи
+                    {
+
+                    }
+
+                }
+            }
+            else 
+            {
+                
+            }
+
+        }
+
+    </script>
+
+    <form>
+
+        <p>
+            <b>Введіть текст </b><br>
+            <textarea id="InputText" cols="50" rows="5"></textarea>
+        </p>
+
+        <p>
+            <input type="button" value="Проверить" onclick="sendForm()">
+        </p>
+
+        <p>Результат аналізу<br>
+            <textarea id="OutputText" cols="50" rows="6"></textarea>
+        </p>
+
+    </form>
+
 </body>
-<script src="js/script.js"></script>
 
 </html>
