@@ -12,47 +12,7 @@
 
     <script src="js/date.js"></script>
 
-    <script>
-        function sendForm() {
-
-            const keyBox = document.getElementById("InputText").value;
-
-            if (keyBox.length > 0) {
-
-                const array = keyBox.split('');
-                const numbers = "1234567890";
-                const characters = "йцукенгшщзхїфівапролджєячсмитьбю";
-                const specialCharacters = "~`!@#$%^&*()-_=+[{]};:',<.>/?" + '"\|';
-                let wordsCount = 0; 
-                
-
-
-                for (let index = 0; index < array.length; index++) {
-                    const element = array[index];
-
-                    if (index = 0)//Перший єлемент
-                    {
-
-                    }
-                    else if (index = array.length) //Останній єлемент
-                    {
-
-                    }
-                    else //Усі інші єлементи
-                    {
-
-                    }
-
-                }
-            }
-            else 
-            {
-                
-            }
-
-        }
-
-    </script>
+    <script src="js/button.js"> </script>
 
     <form>
 
@@ -62,7 +22,11 @@
         </p>
 
         <p>
-            <input type="button" value="Проверить" onclick="sendForm()">
+            <input type="button" value="Проверить" onclick="<script src='js/button.js'> </script>">
+        </p>
+
+        <p>
+            <input type="button" value="Проверить1" onclick="<script src="js/button.js"> </script>">
         </p>
 
         <p>Результат аналізу<br>
